@@ -1,0 +1,144 @@
+# ============================
+# 🐍 PYTHON BUILD ARTIFACTS
+# ============================
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+*.egg
+*.pyd
+*.pyo
+*.pdb
+
+# ============================
+# 🧪 TEST OUTPUT
+# ============================
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+test-results/
+
+# ============================
+# 📁 ENVIRONMENTS
+# ============================
+.env
+.venv/
+venv/
+ENV/
+env/
+*.env
+*.envrc
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ============================
+# 📓 JUPYTER NOTEBOOKS
+# ============================
+.ipynb_checkpoints/
+*.ipynb~  # unsaved/backup versions
+
+# ============================
+# 🧠 ML/DL MODEL FILES
+# ============================
+*.h5
+*.hdf5
+*.pkl
+*.joblib
+*.ckpt
+*.pt
+*.pth
+*.onnx
+*.tflite
+*.pb
+runs/
+logs/
+tensorboard/
+
+# ============================
+# 📂 DATA ARTIFACTS
+# ============================
+*.csv
+*.tsv
+*.json
+*.xls
+*.xlsx
+*.parquet
+*.feather
+*.arrow
+*.db
+*.sqlite3
+*.zip
+*.tar.gz
+*.npz
+*.npy
+data/
+datasets/
+outputs/
+models/
+checkpoints/
+
+# ============================
+# 🖼️ MEDIA / VISUALIZATION OUTPUT
+# ============================
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.gif
+*.pdf
+
+# ============================
+# 🧠 ML EXPERIMENT TRACKERS
+# ============================
+mlruns/
+wandb/
+comet.log
+lightning_logs/
+ray_results/
+optuna_study/
+
+# ============================
+# 🛠️ IDE / OS TRASH FILES
+# ============================
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*.bak
+*.tmp
+*~
+
+# ============================
+# 🚀 PYTHON PACKAGE BUILD
+# ============================
+build/
+dist/
+*.spec  # for pyinstaller
+*.manifest
+
+# ============================
+# 📦 DOCKER / K8S / CI ARTIFACTS
+# ============================
+*.log
+docker-compose.override.yml
+__pycache__/
+.dockerignore
+.env.docker
+*.pid
+
+# ============================
+# 🔍 CONFIG FILES TO EXCLUDE
+# ============================
+.mypy_cache/
+.pytest_cache/
+.pylint.d/
+.cache/
