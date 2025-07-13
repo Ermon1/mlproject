@@ -121,21 +121,4 @@ def log_params(logger: logging.Logger, params: Dict[str, Any]):
         extra={'ml_metadata': {'params': params}}
     )
 
-# Usage example
-if __name__ == "__main__":
-    # Initialize with custom metadata
-    logger = get_logger(
-        __name__,
-        metadata={
-            "system": sys.platform,
-            "python": sys.version.split()[0]
-        }
-    )
-    
-    # Example training loop
-    params = {"lr": 0.01, "batch_size": 32}
-    log_params(logger, params)
-    
-    for epoch in range(3):
-        metrics = {"loss": 0.1 * (1/(epoch+1)), "accuracy": 0.9 + epoch*0.05}
-        log_metrics(logger, metrics, prefix="train/", step=epoch)
+ 

@@ -16,7 +16,9 @@ class CustomException(Exception):
         self.error_message = message
 
     def __str__(self):
+        
         return self.error_message
 
     def __repr__(self):
+        
         return f"{self.__class__.__name__}({repr(self.error_message)})"

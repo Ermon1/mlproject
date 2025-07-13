@@ -134,7 +134,12 @@ __pycache__/
 .dockerignore
 .env.docker
 *.pid
+.ARTIFACTS
 
+.artifacts 
+
+
+.
 # ============================
 # 🔍 CONFIG FILES TO EXCLUDE
 # ============================

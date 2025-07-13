@@ -7,6 +7,9 @@ from dataclasses import dataclass
 from src.exception import CustomException
 from src.logger import get_logger
 
+from src.components.data_transformation import DataTransformation
+
+
 logger = get_logger(__name__)
 
 @dataclass
@@ -63,8 +66,15 @@ class DataIngestion:
 if __name__ == "__main__":
     try:
         data_ingestion = DataIngestion()
-        config = data_ingestion.initiate_data_ingestion()
-        logger.info(f"Data ingestion completed. Config: {config}")
+        config = data_ingestion.initiate_data_ingestion()  # returns ONE object
+
+        data_transformation = DataTransformation()
+        data_transformation.initiate_data_transformation(
+            train_path=config.train_data_path, 
+            test_path=config.test_data_path
+        )
+        logger.info("Data ingestion and transformation completed successfully")
+        
     except Exception as e:
         logger.error(f"Error during data ingestion: {e}")
         sys.exit(1)
